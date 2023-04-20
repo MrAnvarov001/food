@@ -1,0 +1,88 @@
+@import './varible';
+
+.works_title{
+    position: relative;
+    height: 270px;
+    width: 100%;
+    @media (max-width:530px) {
+        font-size: 0.7rem;
+    }
+    @media (max-width:530px) {
+        font-size: 0.5rem;
+    }
+    h1{
+        font-size: 1.5em;
+        font-weight: 400;
+        text-transform: capitalize;
+        color: $vrWhite;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 6;
+        letter-spacing: 7px;
+        text-align: center;
+    }
+    h2{
+        font-size: 5em;
+        font-weight: 900;
+        color: $backFon;
+        text-transform: uppercase;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 5;
+    }
+    .green_line{
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+}
+
+.works{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @media (max-width:1100px) {
+        width: 28em;
+        gap: 1.5em;
+        max-width: 100%;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    .work{
+        width: 12.75em;
+        max-width: 23%;
+        height: 9em;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+        background-color: $darkGray;
+        padding: 1.2em;
+        border-radius: 6px;
+        @media (max-width:1100px) {
+            max-width: 50%;
+        }
+        @media (max-width:600px) {
+            max-width: 90%;
+        }
+        @media (max-width:280px) {
+            font-size: 0.8rem;
+        }
+        h1{
+            font-size: 1.1em;
+            font-weight: 400;
+            color: $vrWhite;
+        }
+        h2{
+            font-size: 0.65em;
+            font-weight: 400;
+            color: $vrGray;
+            margin-top: 0.7em;
+        }
+    }
+}

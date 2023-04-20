@@ -1,0 +1,71 @@
+@import './varible';
+
+.basics{
+    color: $vrWhite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3em;
+    padding: 11.3em 3em 4.5em;
+    background-image: linear-gradient(to bottom, $vrBlack, $darkGray, );
+    position: relative;
+    @media (max-width:600px) {
+        font-size: 0.8rem;
+    }
+    @media (max-width:350px) {
+        font-size: 0.7rem;
+    }
+    h1{
+        font-size: 1.5em;
+        font-weight: 400;
+        width: 36.7em;
+        max-width: 90%;
+        text-align: center;
+        position: absolute;
+        top: 100px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 9;
+        @media (max-width:600px) {
+            top: 90px;
+        }
+    }
+    h2{
+        font-size: 5em;
+        font-weight: 900;
+        color: $backFon;
+        position: absolute;
+        top: 60px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 7;
+        @media (max-width:280px) {
+            font-size: 4em;
+            top: 70px;
+        }
+    }
+    p{
+        font-size: 0.8em;
+        font-weight: 400;
+        width: 36.7em;
+        max-width: 90%;
+        text-align: center;
+    }
+    .image{
+        display: flex;
+        gap: 1.75em;
+        width: 100%;
+        justify-content: center;
+        @media (max-width:480px) {
+            flex-direction: column;
+            align-items: center;
+        }
+        img{
+            width: 17.5em;
+            max-width: 50%;
+            @media (max-width:480px) {
+                max-width: 100%;
+            }
+        }
+    }
+}

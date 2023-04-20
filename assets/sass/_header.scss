@@ -1,0 +1,85 @@
+@import './varible';
+
+.main{
+    
+}
+header{
+    height: 90px;
+    border-bottom: 2px solid $vrWhite;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-image: url(../media/background1.png);
+    background-size: cover;
+    background-position: top;
+    z-index: 10;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width:750px) {
+        font-size: 0.8rem;
+    }
+    .logo{
+        display: flex;
+        align-items: center;
+        gap: 0.5em;
+        img[alt="1"]{
+            width: 1.25em;
+        }
+        img[alt="2"]{
+            width: 8.65em;
+        }
+    }
+    
+    label{
+        color: $vrGreeen;
+        display: none;
+        @media (max-width:500px) {
+            display: block;
+        }
+    }
+
+    input{
+        display: none;
+    }
+    #menu:checked + ul{
+        left: 0;
+    }
+        
+    ul{
+        display: flex;
+        gap: 2.5em;
+        color: $vrWhite;
+        
+        @media (max-width:550px) {
+            gap: 1.8em;
+        }
+        @media (max-width:500px) {
+            flex-direction: column;
+            position: fixed;
+            top: 90px;
+            left: -100vw;
+            background-color: rgb(0, 83, 0);
+            width: 60%;
+            height: calc(100vh - 90px);
+            font-size: 1.2rem;
+            padding: 2em;
+            transition: 0.4s ease-in-out;
+        }
+        @media (max-width:400px) {
+            width: 100%;
+            align-items: center;
+        }
+        li{
+            font-size: 0.7em;
+            font-weight: 700;
+            &:hover{
+                color: $vrGreeen;
+            }
+        }
+    }
+}

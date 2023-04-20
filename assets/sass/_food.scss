@@ -1,0 +1,113 @@
+@import './varible';
+
+.foods{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5em;
+    @media (max-width:450px) {
+        font-size: 0.8rem;
+    }
+    .food{
+        width: 17.5em;
+        background-color: $darkGray;
+        border-radius: 6px;
+        max-width: 90%;
+        img{
+            width: 100%;
+        }
+        .text{
+            padding: 1.5em 1.2em 1.2em 1.5em;
+        }
+        h1{
+            font-size: 1.6em;
+            font-weight: 400;
+            color: $vrWhite;
+        }
+        h2{
+            font-size: 0.6em;
+            font-weight: 400;
+            color: $foodtext;
+        }
+        p{
+            font-size: 0.65em;
+            font-weight: 400;
+            color: $foodtext1;
+            margin: 1em 0;
+        }
+        .stars{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            @media (max-width:450px) {
+                flex-direction: column;
+                gap: 1em;
+                margin-top: 2em;
+            }
+            ul{
+                display: flex;
+                align-items: center;
+                color: $gold;
+                gap: 5px;
+                i{
+                    font-size: 0.8em;
+                }
+                h3{
+                    font-size: 0.7em;
+                    font-weight: 900;
+                    color: $starNumber;
+                    margin-left: 5px;
+                }
+
+            }
+        }
+    }
+}
+
+.avatars{
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin-bottom: 1.2em;
+    @media (max-width:850px) {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 3em;
+    }
+    @media (max-width:300px) {
+        font-size: 0.8rem;
+    }
+    .avatar{
+        display: flex;
+        gap: 1.2em;
+        align-items: center;
+        width: 33%;
+        @media (max-width:850px) {
+            width: 11em;
+        }
+        img{
+            width: 3.25em;
+        }
+        .name{
+            h1{
+                font-size: 0.9em;
+                font-weight: 400;
+                color: $vrWhite;
+                margin-bottom: 0.3em;
+            }
+            h2{
+                font-size: 0.6em;
+                font-weight: 400;
+                color: $vrGray;
+            }
+        }
+    }
+}
+
+.mini_images{
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+    flex-wrap: wrap;
+    
+}
